@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+function fun(w)
+{
+if (w==1)
+{
+document.getElementById('imga').src="img2.jpg";
+}
+else
+{
+document.getElementById('imga').src="img1.jpg";
+}
+}
+</script>
+<img id="imga" src="img1.jpg" height="300" width="400"><br>
+<button type="button" onclick="fun(1)" >change</button>
+<form>
+<input type="button" onclick="alert('hello')" value="click me!">
+<br>
+</form>
+</body>
+</html>
