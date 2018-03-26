@@ -1,0 +1,63 @@
+1.printing *:
+#include<iostream>
+using namespace std;
+main()
+{
+	int i,n,j;
+	cout<<"enter the number";
+	cin>>n;
+	for(i=0;i<n;i++)
+	{
+		cout<<"\n";
+		for(j=0;j<=i;j++)
+		{
+			cout<<"*\t";
+		}
+	}
+}
+2.armstrong
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,n,b,r;
+	cin>>a;b=0;
+	n=a;
+	while(n>0)
+	{
+		r=n%10;
+		b=b+(r*r*r);
+		n=n/10;	
+	}
+	if(a==b)
+	{
+		cout<<"yes";
+	}
+	else
+	{
+		cout<<"no";
+	}
+}
+3.palindrome
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,n,b,r;
+	cin>>a;b=0;
+	n=a;
+	while(n>0)
+	{
+		r=n%10;
+		b=(b*10)+r;
+		n=n/10;	
+	}
+	if(a==b)
+	{
+		cout<<"yes";
+	}
+	else
+	{
+		cout<<"no";
+	}
+}
